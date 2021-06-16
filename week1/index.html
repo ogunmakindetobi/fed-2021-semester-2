@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- https://github.com/ibat-college-projects/fed-2021-semester-2.git -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -64,6 +64,13 @@
         console.log(myCenturyMessage);
         myAgeToCenturyMessage = ageToCentury(65);
         console.log(myCenturyMessage);
+        // myAgeToCenturyMessage = ageToCentury(165);
+        // console.log(myCenturyMessage);
+        // myAgeToCenturyMessage = ageToCentury(-25);
+        // console.log(myCenturyMessage);
+        // myAgeToCenturyMessage = ageToCentury('gotcha');
+        // console.log(myCenturyMessage);
+
 
         const priceOfItem = 50;
 
@@ -77,8 +84,33 @@
             console.log(`Cheaper price`)
 
         }
+        function GetYearsToCentury(age, targetYears) {
 
-        
+            if (isNaN(age) || isNaN(targetYears)) {
+                return -1
+            }
+            // || means OR
+            if (age > 100 || age < 1) {
+                return -1
+            }
+            // ??? how to handle age greater than target years
+
+            if (age > targetYears) {
+
+                return -1;
+            }
+
+            let yearsToCentury = targetYears - age;
+            return yearsToCentury;
+
+        }
+
+        let _century = 100;
+        yearsToCentury = GetYearsToCentury(60, _century);
+        if (yearsToCentury >= 0) {
+            myMessageAge = `It will take me ${yearsToCentury} years to reach ${_century} years`;
+            console.log(myMessageAge);
+        }
 
 
 
