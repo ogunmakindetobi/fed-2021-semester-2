@@ -51,15 +51,22 @@
             let century = 100;
             let yearsToCentury = century - age;
             const myCenturyMessage = `I am ${age} years old and I will be ${century} in ${yearsToCentury} years time`;
+           /// console.log(myCenturyMessage);
 
-            console.log(myCenturyMessage);
+           return myCenturyMessage;
 
         }
 
         // Call the function, executing the function, invoking the function
-        ageToCentury(59);
-        ageToCentury(24);
-        ageToCentury(65);
+        let myCenturyMessage = ageToCentury(59);
+            console.log(myCenturyMessage);
+    myCenturyMessage = ageToCentury(24);
+            console.log(myCenturyMessage);
+   myCenturyMessage = ageToCentury(65);
+            console.log(myCenturyMessage);
+
+
+            
 
 
 
