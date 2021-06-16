@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,9 +29,9 @@
 
         console.log(myMessage);
 
-         // let is the modern form of var for declaring a variable
+        // let is the modern form of var for declaring a variable
         // the `` (backtick) is used for string interpolation
-        let age = 59; 
+        let age = 59;
 
         console.log(`My age is ${age}`);
 
@@ -42,6 +43,25 @@
         const myCenturyMessage = `I am ${age} years old and I will be ${century} in ${yearsToCentury} years time`;
 
         console.log(myCenturyMessage);
+
+        // keyword: function, followed by a demonstrative name 
+        // arguments (parameters) passed as inputs into the function
+        function ageToCentury(age) {
+            // let age = 59;
+            let century = 100;
+            let yearsToCentury = century - age;
+            const myCenturyMessage = `I am ${age} years old and I will be ${century} in ${yearsToCentury} years time`;
+
+            console.log(myCenturyMessage);
+
+        }
+
+        // Call the function, executing the function, invoking the function
+        ageToCentury(59);
+        ageToCentury(24);
+        ageToCentury(65);
+
+
 
 
 
@@ -57,6 +77,7 @@
 </head>
 
 <body>
-<h1>Hello World this is john calling</h1>
+    <h1>Hello World this is john calling</h1>
 </body>
-</html> 
+
+</html>
