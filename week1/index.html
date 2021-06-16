@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // alert('Hello World')
+        // text is called string - wrapped in some form of quotes
+        console.log(`Hello World`); // backtick operator
+
+        var greeting = 'Hello World from a variable'; // greeting is assigned the string value of Hello World
+
+        console.log(greeting);
+
+        // Challenge: Create your first name and lastname as variables and print to the console.
+
+        var firstName = 'John';
+        var lastName = 'Rowley';
+        console.log(firstName);
+        console.log(lastName);
+        // joining strings together using + is known as concatentation
+        console.log('My first name is ' + firstName + ' ' + 'My last name is' + lastName)
+
+        // BACKTICK (`) string interpolation and assigned to a constant (cannot be changed)
+        const myMessage = `My first name is ${firstName} and my last name is ${lastName}`;
+
+        console.log(myMessage);
+
+         // let is the modern form of var for declaring a variable
+        // the `` (backtick) is used for string interpolation
+        let age = 59; 
+
+        console.log(`My age is ${age}`);
+
+        //Coding challenge: Can you write a (dynamic) piece of code that
+        // outputs how many years before I am 100?
+
+        let century = 100;
+        let yearsToCentury = century - age;
+        const myCenturyMessage = `I am ${age} years old and I will be ${century} in ${yearsToCentury} years time`;
+
+        console.log(myCenturyMessage);
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</head>
+
+<body>
+<h1>Hello World this is john calling</h1>
+</body>
+</html> 
