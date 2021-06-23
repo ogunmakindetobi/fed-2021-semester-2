@@ -1,4 +1,4 @@
-alert('find.js')
+
 //http://listofrandomnames.com/index.cfm?textarea
 const listOfNames = [
     'Daysi',
