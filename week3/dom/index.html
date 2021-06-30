@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/site.js"></script>
+
+    <style>
+        .messagePanel {
+            border: solid 1px red;
+            width: 85%;
+            height: 150px;
+            margin-top: 15px;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body onload="init()">
+    <h1>Working with the DOM (the page)</h1>
+    <h2 id="greeting">?</h2>
+    <button onclick="ClickMe()">Click Me</button>
+    <!-- <button onclick="ClearEmail()">Clear Email</button> -->
+    <input type="text" id="email" value="My Email" onfocus="ClearEmail()" onblur="SetEmail()" />
+    <p>
+        Current date is <span id="currentDate">?</span>
+    </p>
+
+    <div id="messagePanel" class='messagePanel'></div>
+</body>
+
+</html>
